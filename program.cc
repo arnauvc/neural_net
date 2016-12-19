@@ -1,11 +1,6 @@
-// neural-net-tutorial.cpp
-// David Miller, http://millermattson.com/dave
-// See the associated video for instructions: http://vimeo.com/19569529
-
-
-#include <vector>
 #include <iostream>
-#include <cstdlib>
+#include <vector>
+
 #include <cassert>
 #include <cmath>
 #include <fstream>
@@ -26,10 +21,11 @@ void showVectorVals(string label, vector<double> &v)
     cout << endl;
 }
 
-int main()
-{
+int main(){
+    string filename;
+    cin >> filename ;
     cout << "Principi del main" << endl;
-    TrainingData trainData("./trainingData.txt");
+    TrainingData trainData(filename);
     cout << "TrainingData Correcte" << endl;
     // e.g., { 3, 2, 1 }
     vector<unsigned> topology;

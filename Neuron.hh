@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include <vector>
-#include <cmath>
+#include <math.h>
+#include <cstdlib>
 
 using namespace std;
 

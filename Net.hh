@@ -9,6 +9,7 @@
 #include "Neuron.hh"
 #include <cmath>
 #include <assert.h>
+#include <cstdlib>
 
 using namespace std;
 
