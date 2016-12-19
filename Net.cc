@@ -8,7 +8,7 @@ Net::~Net(){}
 
 Net::Net(const vector<unsigned> &topology)
 {
-    m_recentAverageSmoothingFactor = 100.0; // Number of training samples to average over
+    //m_recentAverageSmoothingFactor = 100.0; // Number of training samples to average over
     
     unsigned numLayers = topology.size();
     for (unsigned layerNum = 0; layerNum < numLayers; ++layerNum) {

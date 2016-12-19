@@ -28,13 +28,17 @@ void showVectorVals(string label, vector<double> &v)
 
 int main()
 {
-    TrainingData trainData("./TrainingData.txt");
-
+    cout << "Principi del main" << endl;
+    TrainingData trainData("./trainingData.txt");
+    cout << "TrainingData Correcte" << endl;
     // e.g., { 3, 2, 1 }
     vector<unsigned> topology;
     trainData.getTopology(topology);
 
     Net myNet(topology);
+    //m_recentAverageSmoothingFactor = 100.0;
+
+
 
     vector<double> inputVals, targetVals, resultVals;
     int trainingPass = 0;

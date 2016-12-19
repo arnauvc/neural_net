@@ -21,7 +21,7 @@ class Net{
         vector<Layer> m_layers; // m_layers[layerNum][neuronNum]
         double m_error;
         double m_recentAverageError;
-        static double m_recentAverageSmoothingFactor = 100.0;
+        double m_recentAverageSmoothingFactor = 100.0  ;
 
     public:
         
